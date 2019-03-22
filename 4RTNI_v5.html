@@ -446,71 +446,79 @@ $(document).ready(function () {
 <h1>Demographic Tables</h1>
 <p>for PSP</p>
 <pre class="r"><code>demo_table_PSP</code></pre>
-<pre><code>##                              Stratified by disease_duration_category
-##                               SHORT         LONG          p      test
-##   n                               8            12                    
-##   age_at_baseline (mean (sd)) 66.12 (8.59)  71.64 (7.84)   0.164     
-##   sex_baseline = M (%)            3 (37.5)      4 (36.4)   1.000     
-##   EDUCATION (mean (sd))       13.88 (1.55)  16.08 (3.82)   0.141     
-##   CDR_0_CDRTOT (mean (sd))     0.62 (0.23)   0.71 (0.58)   0.707     
-##   PSPRS_0_TOTAL (mean (sd))   23.75 (5.04)  42.10 (15.43)  0.005</code></pre>
+<pre><code>##                                     Stratified by disease_duration_category
+##                                      SHORT         LONG          p      test
+##   n                                      8            12                    
+##   age_at_baseline (mean (sd))        66.12 (8.59)  71.64 (7.84)   0.164     
+##   sex_baseline = M (%)                   3 (37.5)      4 (36.4)   1.000     
+##   EDUCATION (mean (sd))              13.88 (1.55)  16.08 (3.82)   0.141     
+##   CDR_0_CDRTOT (mean (sd))            0.62 (0.23)   0.71 (0.58)   0.707     
+##   CDR_0_BOXSCORE (mean (sd))          3.50 (2.00)   4.21 (3.31)   0.595     
+##   PSPRS_0_TOTAL (mean (sd))          23.75 (5.04)  42.10 (15.43)  0.005     
+##   MOCA_0_MOCATOTWITHEDUC (mean (sd)) 23.00 (2.62)  20.00 (5.79)   0.222</code></pre>
 <p>for CBS</p>
 <pre class="r"><code>demo_table_CBS</code></pre>
-<pre><code>##                              Stratified by disease_duration_category
-##                               SHORT         LONG          p      test
-##   n                               8            10                    
-##   age_at_baseline (mean (sd)) 62.25 (5.28)  67.10 (6.97)   0.123     
-##   sex_baseline = M (%)            4 (50.0)      4 (40.0)   1.000     
-##   EDUCATION (mean (sd))       20.38 (4.60)  16.00 (2.49)   0.020     
-##   CDR_0_CDRTOT (mean (sd))     0.56 (0.32)   0.55 (0.37)   0.941     
-##   PSPRS_0_TOTAL (mean (sd))   19.88 (6.73)  23.78 (12.07)  0.432</code></pre>
+<pre><code>##                                     Stratified by disease_duration_category
+##                                      SHORT         LONG          p      test
+##   n                                      8            10                    
+##   age_at_baseline (mean (sd))        62.25 (5.28)  67.10 (6.97)   0.123     
+##   sex_baseline = M (%)                   4 (50.0)      4 (40.0)   1.000     
+##   EDUCATION (mean (sd))              20.38 (4.60)  16.00 (2.49)   0.020     
+##   CDR_0_CDRTOT (mean (sd))            0.56 (0.32)   0.55 (0.37)   0.941     
+##   CDR_0_BOXSCORE (mean (sd))          2.62 (2.08)   2.90 (2.12)   0.786     
+##   PSPRS_0_TOTAL (mean (sd))          19.88 (6.73)  23.78 (12.07)  0.432     
+##   MOCA_0_MOCATOTWITHEDUC (mean (sd)) 21.50 (6.83)  20.00 (7.46)   0.707</code></pre>
 </div>
 <div id="raw-values-tables" class="section level1">
 <h1>raw values tables</h1>
 <p>for PSP</p>
 <pre class="r"><code>print(PSP_table,digits=6)</code></pre>
-<pre><code>##                                    Stratified by disease_duration_category
-##                                     SHORT                    LONG                     p      test
-##   n                                 8                        12                                  
-##   total_wm_vol_slope_mo (mean (sd)) -620.876427 (693.791632) -496.969589 (801.663354)  0.750     
-##   total_gm_vol_slope (mean (sd))     -24.466584 (16.838069)    -8.880236 (23.869820)   0.166     
-##   midbrain_vol_slope (mean (sd))      -0.137569 (0.353391)     -0.272465 (0.442197)    0.521     
-##   precentral_b_fa_slope (mean (sd))   -0.000042 (0.000022)     -0.000003 (0.000026)    0.003     
-##   scp_b_fa_slope (mean (sd))          -0.000097 (0.000087)     -0.000066 (0.000115)    0.528     
-##   scp_vol_slope (mean (sd))           -0.021824 (0.046781)     -0.001451 (0.055665)    0.450</code></pre>
+<pre><code>##                                     Stratified by disease_duration_category
+##                                      SHORT                    LONG                     p      test
+##   n                                  8                        12                                  
+##   total_wm_vol_slope_mo (mean (sd))  -620.876427 (693.791632) -496.969589 (801.663354)  0.750     
+##   total_gm_vol_slope (mean (sd))      -24.466584 (16.838069)    -8.880236 (23.869820)   0.166     
+##   midbrain_vol_slope (mean (sd))       -0.137569 (0.353391)     -0.272465 (0.442197)    0.521     
+##   precentral_b_fa_slope (mean (sd))    -0.000042 (0.000022)     -0.000003 (0.000026)    0.003     
+##   postcentral_b_fa_slope (mean (sd))   -0.000043 (0.000034)      0.000001 (0.000029)    0.021     
+##   scp_b_fa_slope (mean (sd))           -0.000097 (0.000087)     -0.000066 (0.000115)    0.528     
+##   scp_vol_slope (mean (sd))            -0.021824 (0.046781)     -0.001451 (0.055665)    0.450</code></pre>
 <p>for CBS</p>
 <pre class="r"><code>print(CBS_table,digits=6)</code></pre>
-<pre><code>##                                    Stratified by disease_duration_category
-##                                     SHORT                    LONG                     p      test
-##   n                                 8                        10                                  
-##   total_wm_vol_slope_mo (mean (sd)) -878.966054 (640.379557) -667.498427 (584.739061)  0.491     
-##   total_gm_vol_slope (mean (sd))     -28.325414 (15.635551)   -24.026411 (26.476618)   0.707     
-##   midbrain_vol_slope (mean (sd))      -0.036912 (0.306542)     -0.413877 (0.362512)    0.041     
-##   precentral_b_fa_slope (mean (sd))   -0.000009 (0.000033)     -0.000014 (0.000030)    0.746     
-##   scp_b_fa_slope (mean (sd))          -0.000008 (0.000154)     -0.000028 (0.000060)    0.717     
-##   scp_vol_slope (mean (sd))           -0.016802 (0.051761)      0.009747 (0.057112)    0.343</code></pre>
+<pre><code>##                                     Stratified by disease_duration_category
+##                                      SHORT                    LONG                     p      test
+##   n                                  8                        10                                  
+##   total_wm_vol_slope_mo (mean (sd))  -878.966054 (640.379557) -667.498427 (584.739061)  0.491     
+##   total_gm_vol_slope (mean (sd))      -28.325414 (15.635551)   -24.026411 (26.476618)   0.707     
+##   midbrain_vol_slope (mean (sd))       -0.036912 (0.306542)     -0.413877 (0.362512)    0.041     
+##   precentral_b_fa_slope (mean (sd))    -0.000009 (0.000033)     -0.000014 (0.000030)    0.746     
+##   postcentral_b_fa_slope (mean (sd))   -0.000014 (0.000026)     -0.000007 (0.000022)    0.680     
+##   scp_b_fa_slope (mean (sd))           -0.000008 (0.000154)     -0.000028 (0.000060)    0.717     
+##   scp_vol_slope (mean (sd))            -0.016802 (0.051761)      0.009747 (0.057112)    0.343</code></pre>
 <p>All, split by disease duration group</p>
 <pre class="r"><code>print(LS_table,digits=6)</code></pre>
-<pre><code>##                                    Stratified by disease_duration_category
-##                                     SHORT                    LONG                     p      test
-##   n                                 16                       22                                  
-##   total_wm_vol_slope_mo (mean (sd)) -749.921240 (655.258770) -586.721609 (681.352363)  0.495     
-##   total_gm_vol_slope (mean (sd))     -26.395999 (15.738398)   -16.851907 (25.770258)   0.230     
-##   midbrain_vol_slope (mean (sd))      -0.087240 (0.322082)     -0.346892 (0.397336)    0.054     
-##   precentral_b_fa_slope (mean (sd))   -0.000026 (0.000032)     -0.000008 (0.000028)    0.088     
-##   scp_b_fa_slope (mean (sd))          -0.000053 (0.000129)     -0.000049 (0.000094)    0.913     
-##   scp_vol_slope (mean (sd))           -0.019313 (0.047470)      0.004442 (0.055146)    0.205</code></pre>
+<pre><code>##                                     Stratified by disease_duration_category
+##                                      SHORT                    LONG                     p      test
+##   n                                  16                       22                                  
+##   total_wm_vol_slope_mo (mean (sd))  -749.921240 (655.258770) -586.721609 (681.352363)  0.495     
+##   total_gm_vol_slope (mean (sd))      -26.395999 (15.738398)   -16.851907 (25.770258)   0.230     
+##   midbrain_vol_slope (mean (sd))       -0.087240 (0.322082)     -0.346892 (0.397336)    0.054     
+##   precentral_b_fa_slope (mean (sd))    -0.000026 (0.000032)     -0.000008 (0.000028)    0.088     
+##   postcentral_b_fa_slope (mean (sd))   -0.000028 (0.000033)     -0.000002 (0.000026)    0.037     
+##   scp_b_fa_slope (mean (sd))           -0.000053 (0.000129)     -0.000049 (0.000094)    0.913     
+##   scp_vol_slope (mean (sd))            -0.019313 (0.047470)      0.004442 (0.055146)    0.205</code></pre>
 <p>All, split by diagnosis</p>
 <pre class="r"><code>print(diag_table,digits=6)</code></pre>
-<pre><code>##                                    Stratified by Diagnosis
-##                                     CBS                      PSP                      p      test
-##   n                                 18                       20                                  
-##   total_wm_vol_slope_mo (mean (sd)) -754.573332 (598.013849) -551.178831 (734.386188)  0.388     
-##   total_gm_vol_slope (mean (sd))     -25.796589 (22.152912)   -15.699263 (21.932964)   0.198     
-##   midbrain_vol_slope (mean (sd))      -0.258656 (0.381745)     -0.213448 (0.398770)    0.742     
-##   precentral_b_fa_slope (mean (sd))   -0.000012 (0.000031)     -0.000019 (0.000031)    0.516     
-##   scp_b_fa_slope (mean (sd))          -0.000019 (0.000108)     -0.000079 (0.000104)    0.092     
-##   scp_vol_slope (mean (sd))           -0.001185 (0.054962)     -0.010365 (0.051351)    0.624</code></pre>
+<pre><code>##                                     Stratified by Diagnosis
+##                                      CBS                      PSP                      p      test
+##   n                                  18                       20                                  
+##   total_wm_vol_slope_mo (mean (sd))  -754.573332 (598.013849) -551.178831 (734.386188)  0.388     
+##   total_gm_vol_slope (mean (sd))      -25.796589 (22.152912)   -15.699263 (21.932964)   0.198     
+##   midbrain_vol_slope (mean (sd))       -0.258656 (0.381745)     -0.213448 (0.398770)    0.742     
+##   precentral_b_fa_slope (mean (sd))    -0.000012 (0.000031)     -0.000019 (0.000031)    0.516     
+##   postcentral_b_fa_slope (mean (sd))   -0.000011 (0.000024)     -0.000022 (0.000038)    0.398     
+##   scp_b_fa_slope (mean (sd))           -0.000019 (0.000108)     -0.000079 (0.000104)    0.092     
+##   scp_vol_slope (mean (sd))            -0.001185 (0.054962)     -0.010365 (0.051351)    0.624</code></pre>
 </div>
 
 
